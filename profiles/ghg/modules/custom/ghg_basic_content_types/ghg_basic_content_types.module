@@ -1,0 +1,54 @@
+<?php
+/**
+ * @file
+ * Code for the GHG Basic Content Types feature.
+ */
+
+include_once 'ghg_basic_content_types.features.inc';
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function ghg_basic_content_types_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['brief'] = array(
+    'label' => t('Brief'),
+    'custom settings' => TRUE,
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function ghg_basic_content_types_block_info() {
+  $blocks['footer'] = array(
+    'info' => t('Footer'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+  $blocks['register'] = array(
+    'info' => t('Register'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function ghg_basic_content_types_block_view($delta = '') {
+  switch ($delta) {
+    case 'footer':
+      $block['content'] = ghg_basic_content_types_footer();
+      break;
+    case 'register':
+      $block['content'] = drupal_render(drupal_get_form('user_register_form'));
+      break;
+  }
+  
+  return $block;
+}
+
+function ghg_basic_content_types_footer() {
+  $items = array(
+    '#markup' => "©2011 Gamers Helping Gamers",
+  );
+  return $items;
+}

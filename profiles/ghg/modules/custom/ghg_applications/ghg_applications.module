@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the GHG Applications feature.
+ */
+
+include_once 'ghg_applications.features.inc';
