@@ -1,4 +1,0 @@
-ghg
-===
-
-Gamers Helping Gamers
