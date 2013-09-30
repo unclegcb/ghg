@@ -1,0 +1,11 @@
+name = GHG Wysiwyg
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = wysiwyg
+features[features_api][] = api:2
+features[filter][] = formatted
+features[user_permission][] = use text format formatted
+features[wysiwyg][] = formatted
+project path = profiles/ghg/modules/custom
