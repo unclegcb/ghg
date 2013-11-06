@@ -66,11 +66,17 @@ function ghg_display_context_default_contexts() {
           'region' => 'header',
           'weight' => '-10',
         ),
+        'ghg_basic_content_types-donate' => array(
+          'module' => 'ghg_basic_content_types',
+          'delta' => 'donate',
+          'region' => 'footer',
+          'weight' => '-13',
+        ),
         'ghg_basic_content_types-footer' => array(
           'module' => 'ghg_basic_content_types',
           'delta' => 'footer',
           'region' => 'footer',
-          'weight' => '-10',
+          'weight' => '-12',
         ),
       ),
     ),

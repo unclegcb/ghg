@@ -107,7 +107,7 @@ function ghg_display_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'user/applications';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Your Application';
+  $handler->display->display_options['menu']['title'] = 'My Application';
   $handler->display->display_options['menu']['weight'] = '20';
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
