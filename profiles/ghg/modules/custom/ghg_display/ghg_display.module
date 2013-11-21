@@ -5,3 +5,12 @@
  */
 
 include_once 'ghg_display.features.inc';
+
+/**
+ * Implements hook_page_alter().
+ */
+function ghg_display_page_alter(&$page) {
+  if (drupal_is_front_page()) {
+    drupal_set_title('');
+  }
+}
