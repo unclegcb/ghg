@@ -80,7 +80,7 @@ function ghg_basic_content_types_field_default_field_instances() {
         'weight' => 1,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
