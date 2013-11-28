@@ -22,13 +22,13 @@ function ghg_basic_content_types_entity_info_alter(&$entity_info) {
 function ghg_basic_content_types_block_info() {
   $blocks['footer'] = array(
     'info' => t('Footer'),
-    'cache' => DRUPAL_NO_CACHE
+    'cache' => DRUPAL_NO_CACHE,
   );
   $blocks['register'] = array(
     'info' => t('Register'),
   );
   $blocks['donate'] = array(
-      'info' => t('Donate'),
+    'info' => t('Donate'),
   );
   return $blocks;
 }
@@ -41,14 +41,16 @@ function ghg_basic_content_types_block_view($delta = '') {
     case 'footer':
       $block['content'] = ghg_basic_content_types_footer();
       break;
+
     case 'register':
       $block['content'] = drupal_render(drupal_get_form('user_register_form'));
       break;
+
     case 'donate':
       $block['content'] = ghg_basic_content_types_donate_form();
       break;
   }
-  
+
   return $block;
 }
 
