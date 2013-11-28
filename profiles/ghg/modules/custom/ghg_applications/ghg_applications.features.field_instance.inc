@@ -13,7 +13,11 @@ function ghg_applications_field_default_field_instances() {
   // Exported field_instance: 'node-application-field_essay_1'
   $field_instances['node-application-field_essay_1'] = array(
     'bundle' => 'application',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Personal statement that touches on: (1) your background in magic, the role magic has had in your life, and why you would be a good recipient; and (2) your future academic and career goals.',
+      ),
+    ),
     'deleted' => 0,
     'description' => 'Personal statement that touches on: (1) your background in magic, the role magic has had in your life, and why you would be a good recipient; and (2) your future academic and career goals.',
     'display' => array(
@@ -39,7 +43,7 @@ function ghg_applications_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_essay_1',
-    'label' => 'Essay 1',
+    'label' => 'Essay 1: Personal Statement',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -61,7 +65,7 @@ function ghg_applications_field_default_field_instances() {
     'bundle' => 'application',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'What is your favorite magic card or mechanic and why?',
+    'description' => '',
     'display' => array(
       'brief' => array(
         'label' => 'above',
@@ -85,7 +89,7 @@ function ghg_applications_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_essay_2',
-    'label' => 'Essay 2',
+    'label' => 'Essay 2: What is your favorite magic card or mechanic and why?',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -107,7 +111,7 @@ function ghg_applications_field_default_field_instances() {
     'bundle' => 'application',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'What is your least favorite magic card or mechanic and why?',
+    'description' => '',
     'display' => array(
       'brief' => array(
         'label' => 'above',
@@ -131,7 +135,7 @@ function ghg_applications_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_essay_3',
-    'label' => 'Essay 3',
+    'label' => 'Essay 3: What is your least favorite magic card or mechanic and why?',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -145,6 +149,61 @@ function ghg_applications_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-application-field_essay_4'
+  $field_instances['node-application-field_essay_4'] = array(
+    'bundle' => 'application',
+    'default_value' => array(
+      0 => array(
+        'value' => 'a)  What can be done to increase diversity in the Magic community?  What factors, if any, do you see as inhibiting or encouraging diversity?
+b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Please explain the factors that would influence your decision.',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Pick 1:
+<ul>
+<li>a)  What can be done to increase diversity in the Magic community?  What factors, if any, do you see as inhibiting or encouraging diversity?</li>
+<li>b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Please explain the factors that would influence your decision.</li>
+</ul>',
+    'display' => array(
+      'brief' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_essay_4',
+    'label' => 'Essay 4: Pick One',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 8,
     ),
   );
 
@@ -192,7 +251,7 @@ function ghg_applications_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -247,7 +306,7 @@ function ghg_applications_field_default_field_instances() {
     'bundle' => 'application',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Optional',
+    'description' => '<i>Optional</i>',
     'display' => array(
       'brief' => array(
         'label' => 'above',
@@ -337,7 +396,7 @@ function ghg_applications_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -345,7 +404,7 @@ function ghg_applications_field_default_field_instances() {
   $field_instances['node-application-field_transcript'] = array(
     'bundle' => 'application',
     'deleted' => 0,
-    'description' => 'Upload a transcript in PDF format. If you need to upload multiple transcripts for any reason, you may add another field here.',
+    'description' => 'Upload a transcript in PDF format. (You may upload multiple transcripts: additional upload fields will appear after each addition.)',
     'display' => array(
       'brief' => array(
         'label' => 'above',
@@ -385,26 +444,30 @@ function ghg_applications_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Essay 1');
-  t('Essay 2');
-  t('Essay 3');
+  t('<i>Optional</i>');
+  t('Essay 1: Personal Statement');
+  t('Essay 2: What is your favorite magic card or mechanic and why?');
+  t('Essay 3: What is your least favorite magic card or mechanic and why?');
+  t('Essay 4: Pick One');
   t('High School Transcript');
-  t('Optional');
   t('Personal statement that touches on: (1) your background in magic, the role magic has had in your life, and why you would be a good recipient; and (2) your future academic and career goals.');
+  t('Pick 1:
+<ul>
+<li>a)  What can be done to increase diversity in the Magic community?  What factors, if any, do you see as inhibiting or encouraging diversity?</li>
+<li>b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Please explain the factors that would influence your decision.</li>
+</ul>');
   t('SAT/ACT Score');
   t('Student Aid Report');
   t('Submission Status');
   t('Upload a PDF copy of your Student Aid Report from the <a href="http://www.fafsa.ed.gov/">Free Application for Federal Student Aid (FAFSA)</a>.');
-  t('Upload a transcript in PDF format. If you need to upload multiple transcripts for any reason, you may add another field here.');
+  t('Upload a transcript in PDF format. (You may upload multiple transcripts: additional upload fields will appear after each addition.)');
   t('What are some of your Magic Achievements?');
-  t('What is your favorite magic card or mechanic and why?');
-  t('What is your least favorite magic card or mechanic and why?');
   t('Your application will not be submitted until you change this field to "submitted" and Save.');
 
   return $field_instances;
