@@ -10,56 +10,94 @@ core = 7.x
 ;-----------------------------------------
 
 ; addressfield
-;projects[addressfield][version] = ""
+projects[addressfield][version] = "1.0-beta4"
 projects[addressfield][subdir] = "contrib"
 
 ; admin_menu requires bean
-;projects[admin_menu][version] = ""
+projects[admin_menu][version] = "3.0-rc4"
 projects[admin_menu][subdir] = "contrib"
 
 ; bean requires ctools, entity
-;projects[bean][version] = ""
+projects[bean][version] = "1.6"
 projects[bean][subdir] = "contrib"
 
+; better_exposed_filters
+projects[better_exposed_filters][version] = "3.0-beta3"
+projects[better_exposed_filters][subdir] = "contrib"
+
 ; context requires ctools 1.7+ (jquery_ui & admin recommended)
-;projects[context][version] = ""
+projects[context][version] = "3.1"
 projects[context][subdir] = "contrib"
 
 ; ctools
-;projects[ctools][version] = ""
+projects[ctools][version] = "1.3"
 projects[ctools][subdir] = "contrib"
 
 ; entity
-;projects[entity][version] = ""
+projects[entity][version] = "1.2"
 projects[entity][subdir] = "contrib"
 
 ; entityreference
-;projects[entityreference][version] = ""
+projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = "contrib"
 
 ; features
-;projects[features][version] = ""
+projects[features][version] = "2.0"
 projects[features][subdir] = "contrib"
 
 ; field_collection
-;projects[field_collection][version] = ""
+projects[field_collection][version] = "1.0-beta5"
 projects[field_collection][subdir] = "contrib"
 
+; geocoder
+projects[geofield][version] = "1.2"
+projects[geofield][subdir] = "contrib"
+
+; geofield
+projects[geofield][version] = "2.1"
+projects[geofield][subdir] = "contrib"
+
+; geophp
+projects[geophp][version] = "1.7"
+projects[geophp][subdir] = "contrib"
+
+; leaflet
+projects[leaflet][subdir] = "contrib"
+projects[leaflet][download][type] = git
+projects[leaflet][download][branch] = "7.x-1.x"
+projects[leaflet][download][revision] = "db57dff"
+
+; libraries
+projects[leaflet][version] = "2.1"
+projects[leaflet][subdir] = "contrib"
+
+; link
+projects[link][version] = "1.2"
+projects[link][subdir] = "contrib"
+
 ; pathauto requires token
-;projects[pathauto][version] = ""
+projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = "contrib"
 
+; publishcontent
+projects[publishcontent][version] = "1.2"
+projects[publishcontent][subdir] = "contrib"
+
 ; strongarm requires ctools
-;projects[strongarm][version] = ""
+projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = "contrib"
 
 ; token
-;projects[token][version] = ""
+projects[token][version] = "1.5"
 projects[token][subdir] = "contrib"
 
 ; views
-;projects[views][version] = ""
+projects[views][version] = "3.7"
 projects[views][subdir] = "contrib"
+
+; wysiwyg
+projects[wysiwyg][version] = "2.2"
+projects[wysiwyg][subdir] = "contrib"
 
 ;-----------------------------------------
 ; Patched Contrib Modules
@@ -102,3 +140,9 @@ libraries[chosen][download][url] = https://github.com/harvesthq/chosen.git
 libraries[chosen][directory_name] = "chosen"
 libraries[chosen][type] = "library"
 ;libraries[chosen][revision] = "333899ca51"
+
+; Leaflet
+libraries[leaflet][download][type] = "get"
+libraries[leaflet][download][url] = "http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.zip"
+libraries[leaflet][directory_name] = "leaflet"
+libraries[leaflet][destination] = "libraries"
