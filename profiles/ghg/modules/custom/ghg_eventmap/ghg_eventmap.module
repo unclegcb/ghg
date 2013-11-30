@@ -5,3 +5,30 @@
  */
 
 include_once 'ghg_eventmap.features.inc';
+
+/**
+ * Implements hook_install().
+ */
+function ghg_eventmap_install() {
+  libraries_load('ts_install_helpers');
+  // Generate Taxonomy defaults.
+
+  $vocabs = array(
+    'format' => array(
+      array('name' => 'Constructed (Block)', 'weight' => 0),
+      array('name' => 'Constructed (Standard)', 'weight' => 1),
+      array('name' => 'Constructed (Modern)', 'weight' => 2),
+      array('name' => 'Constructed (Legacy)', 'weight' => 3),
+      array('name' => 'Constructed (Vintage)', 'weight' => 4),
+      array('name' => 'Limited (Draft)', 'weight' => 5),
+      array('name' => 'Limited (Sealed)', 'weight' => 6),
+    ),
+    'tournament_type' => array(
+      array('name' => 'Grand Prix Trial', 'weight' => 0),
+      array('name' => 'Pro Tour', 'weight' => 1),
+      array('name' => 'Grand Prix', 'weight' => 2),
+      array('name' => 'Pro Tour Qualifier', 'weight' => 3),
+    ),
+  );
+  ts_install_helpers_create_terms($vocabs);
+}
