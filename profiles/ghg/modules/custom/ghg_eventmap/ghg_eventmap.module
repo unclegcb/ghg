@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ghg_eventmap feature.
+ */
+
+include_once 'ghg_eventmap.features.inc';
