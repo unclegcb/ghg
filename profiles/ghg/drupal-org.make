@@ -50,8 +50,8 @@ projects[field_collection][version] = "1.0-beta5"
 projects[field_collection][subdir] = "contrib"
 
 ; geocoder
-projects[geofield][version] = "1.2"
-projects[geofield][subdir] = "contrib"
+projects[geocoder][version] = "1.2"
+projects[geocoder][subdir] = "contrib"
 
 ; geofield
 projects[geofield][version] = "2.1"
@@ -68,8 +68,8 @@ projects[leaflet][download][branch] = "7.x-1.x"
 projects[leaflet][download][revision] = "db57dff"
 
 ; libraries
-projects[leaflet][version] = "2.1"
-projects[leaflet][subdir] = "contrib"
+projects[libraries][version] = "2.1"
+projects[libraries][subdir] = "contrib"
 
 ; link
 projects[link][version] = "1.2"
