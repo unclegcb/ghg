@@ -148,7 +148,7 @@ function ghg_eventmap_views_default_views() {
   );
   $handler->display->display_options['filters']['field_format_tid']['vocabulary'] = 'format';
   $handler->display->display_options['filters']['field_format_tid']['error_message'] = FALSE;
-  /* Filter criterion: Content: Date/Time -  start date (field_date_time) */
+  /* Filter criterion: Content: Date -  start date (field_date_time) */
   $handler->display->display_options['filters']['field_date_time_value']['id'] = 'field_date_time_value';
   $handler->display->display_options['filters']['field_date_time_value']['table'] = 'field_data_field_date_time';
   $handler->display->display_options['filters']['field_date_time_value']['field'] = 'field_date_time_value';
@@ -187,7 +187,7 @@ function ghg_eventmap_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date/Time -  start date (field_date_time) */
+  /* Filter criterion: Content: Date -  start date (field_date_time) */
   $handler->display->display_options['filters']['field_date_time_value']['id'] = 'field_date_time_value';
   $handler->display->display_options['filters']['field_date_time_value']['table'] = 'field_data_field_date_time';
   $handler->display->display_options['filters']['field_date_time_value']['field'] = 'field_date_time_value';
@@ -206,7 +206,7 @@ function ghg_eventmap_views_default_views() {
   $handler->display->display_options['filters']['field_date_time_value']['form_type'] = 'date_popup';
   $handler->display->display_options['filters']['field_date_time_value']['default_date'] = 'today()';
   $handler->display->display_options['filters']['field_date_time_value']['year_range'] = '-10:+10';
-  /* Filter criterion: Content: Date/Time - end date (field_date_time:value2) */
+  /* Filter criterion: Content: Date - end date (field_date_time:value2) */
   $handler->display->display_options['filters']['field_date_time_value2']['id'] = 'field_date_time_value2';
   $handler->display->display_options['filters']['field_date_time_value2']['table'] = 'field_data_field_date_time';
   $handler->display->display_options['filters']['field_date_time_value2']['field'] = 'field_date_time_value2';
@@ -229,12 +229,13 @@ function ghg_eventmap_views_default_views() {
   $handler->display->display_options['filters']['field_format_tid']['table'] = 'field_data_field_format';
   $handler->display->display_options['filters']['field_format_tid']['field'] = 'field_format_tid';
   $handler->display->display_options['filters']['field_format_tid']['value'] = array(
-    7 => '7',
-    6 => '6',
-    8 => '8',
+    1 => '1',
+    2 => '2',
     3 => '3',
-    5 => '5',
     4 => '4',
+    5 => '5',
+    6 => '6',
+    7 => '7',
   );
   $handler->display->display_options['filters']['field_format_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_format_tid']['exposed'] = TRUE;
@@ -246,6 +247,7 @@ function ghg_eventmap_views_default_views() {
   $handler->display->display_options['filters']['field_format_tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    4 => 0,
     3 => 0,
   );
   $handler->display->display_options['filters']['field_format_tid']['group_info']['label'] = 'Format (field_format)';
@@ -264,8 +266,8 @@ function ghg_eventmap_views_default_views() {
   $handler->display->display_options['filters']['field_type_tid']['table'] = 'field_data_field_type';
   $handler->display->display_options['filters']['field_type_tid']['field'] = 'field_type_tid';
   $handler->display->display_options['filters']['field_type_tid']['value'] = array(
+    8 => '8',
     9 => '9',
-    12 => '12',
     10 => '10',
     11 => '11',
   );
@@ -279,6 +281,7 @@ function ghg_eventmap_views_default_views() {
   $handler->display->display_options['filters']['field_type_tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    4 => 0,
     3 => 0,
   );
   $handler->display->display_options['filters']['field_type_tid']['type'] = 'select';

@@ -9,7 +9,7 @@ include_once 'ghg_eventmap.features.inc';
 /**
  * Implements hook_install().
  */
-function ghg_eventmap_install() {
+function ghg_eventmap_update_7000() {
   // Generate Taxonomy defaults.
 
   $stubbed_vocabs = array(
