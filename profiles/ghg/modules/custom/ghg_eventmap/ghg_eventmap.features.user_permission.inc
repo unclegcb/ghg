@@ -39,6 +39,20 @@ function ghg_eventmap_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in format'.
+  $permissions['delete terms in format'] = array(
+    'name' => 'delete terms in format',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'delete terms in tournament_type'.
+  $permissions['delete terms in tournament_type'] = array(
+    'name' => 'delete terms in tournament_type',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'edit any event content'.
   $permissions['edit any event content'] = array(
     'name' => 'edit any event content',
@@ -56,6 +70,20 @@ function ghg_eventmap_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in format'.
+  $permissions['edit terms in format'] = array(
+    'name' => 'edit terms in format',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in tournament_type'.
+  $permissions['edit terms in tournament_type'] = array(
+    'name' => 'edit terms in tournament_type',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'geocoder_service_all_handlers'.
@@ -138,42 +166,62 @@ function ghg_eventmap_user_default_permissions() {
   // Exported permission: 'publish any event content'.
   $permissions['publish any event content'] = array(
     'name' => 'publish any event content',
-    'roles' => array(),
+    'roles' => array(
+      'event publisher' => 'event publisher',
+      'staff admin' => 'staff admin',
+    ),
     'module' => 'publishcontent',
   );
 
   // Exported permission: 'publish editable event content'.
   $permissions['publish editable event content'] = array(
     'name' => 'publish editable event content',
-    'roles' => array(),
+    'roles' => array(
+      'event publisher' => 'event publisher',
+      'staff admin' => 'staff admin',
+    ),
     'module' => 'publishcontent',
   );
 
   // Exported permission: 'publish own event content'.
   $permissions['publish own event content'] = array(
     'name' => 'publish own event content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+      'event publisher' => 'event publisher',
+      'staff admin' => 'staff admin',
+    ),
     'module' => 'publishcontent',
   );
 
   // Exported permission: 'unpublish any event content'.
   $permissions['unpublish any event content'] = array(
     'name' => 'unpublish any event content',
-    'roles' => array(),
+    'roles' => array(
+      'event publisher' => 'event publisher',
+      'staff admin' => 'staff admin',
+    ),
     'module' => 'publishcontent',
   );
 
   // Exported permission: 'unpublish editable event content'.
   $permissions['unpublish editable event content'] = array(
     'name' => 'unpublish editable event content',
-    'roles' => array(),
+    'roles' => array(
+      'event publisher' => 'event publisher',
+      'staff admin' => 'staff admin',
+    ),
     'module' => 'publishcontent',
   );
 
   // Exported permission: 'unpublish own event content'.
   $permissions['unpublish own event content'] = array(
     'name' => 'unpublish own event content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+      'event publisher' => 'event publisher',
+      'staff admin' => 'staff admin',
+    ),
     'module' => 'publishcontent',
   );
 

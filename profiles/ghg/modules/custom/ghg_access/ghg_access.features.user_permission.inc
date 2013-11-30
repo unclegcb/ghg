@@ -10,7 +10,7 @@
 function ghg_access_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access administration menu.
+  // Exported permission: 'access administration menu'.
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
     'roles' => array(
@@ -19,7 +19,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: access administration pages.
+  // Exported permission: 'access administration pages'.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
@@ -28,14 +28,14 @@ function ghg_access_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access all views.
+  // Exported permission: 'access all views'.
   $permissions['access all views'] = array(
     'name' => 'access all views',
     'roles' => array(),
     'module' => 'views',
   );
 
-  // Exported permission: access bean overview.
+  // Exported permission: 'access bean overview'.
   $permissions['access bean overview'] = array(
     'name' => 'access bean overview',
     'roles' => array(
@@ -44,7 +44,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: access content.
+  // Exported permission: 'access content'.
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
@@ -54,7 +54,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: access content overview.
+  // Exported permission: 'access content overview'.
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
@@ -63,28 +63,28 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: access devel information.
+  // Exported permission: 'access devel information'.
   $permissions['access devel information'] = array(
     'name' => 'access devel information',
     'roles' => array(),
     'module' => 'devel',
   );
 
-  // Exported permission: access site in maintenance mode.
+  // Exported permission: 'access site in maintenance mode'.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
     'roles' => array(),
     'module' => 'system',
   );
 
-  // Exported permission: access site reports.
+  // Exported permission: 'access site reports'.
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
     'roles' => array(),
     'module' => 'system',
   );
 
-  // Exported permission: access site-wide contact form.
+  // Exported permission: 'access site-wide contact form'.
   $permissions['access site-wide contact form'] = array(
     'name' => 'access site-wide contact form',
     'roles' => array(
@@ -95,7 +95,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'contact',
   );
 
-  // Exported permission: access user contact forms.
+  // Exported permission: 'access user contact forms'.
   $permissions['access user contact forms'] = array(
     'name' => 'access user contact forms',
     'roles' => array(
@@ -104,7 +104,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'contact',
   );
 
-  // Exported permission: access user profiles.
+  // Exported permission: 'access user profiles'.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
@@ -113,14 +113,14 @@ function ghg_access_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer actions.
+  // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
     'roles' => array(),
     'module' => 'system',
   );
 
-  // Exported permission: administer bean settings.
+  // Exported permission: 'administer bean settings'.
   $permissions['administer bean settings'] = array(
     'name' => 'administer bean settings',
     'roles' => array(
@@ -129,7 +129,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: administer bean types.
+  // Exported permission: 'administer bean types'.
   $permissions['administer bean types'] = array(
     'name' => 'administer bean types',
     'roles' => array(
@@ -138,7 +138,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: administer beans.
+  // Exported permission: 'administer beans'.
   $permissions['administer beans'] = array(
     'name' => 'administer beans',
     'roles' => array(
@@ -147,7 +147,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: administer blocks.
+  // Exported permission: 'administer blocks'.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
     'roles' => array(
@@ -156,7 +156,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'block',
   );
 
-  // Exported permission: administer contact forms.
+  // Exported permission: 'administer contact forms'.
   $permissions['administer contact forms'] = array(
     'name' => 'administer contact forms',
     'roles' => array(
@@ -165,7 +165,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'contact',
   );
 
-  // Exported permission: administer content types.
+  // Exported permission: 'administer content types'.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
     'roles' => array(
@@ -174,42 +174,42 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer contexts.
+  // Exported permission: 'administer contexts'.
   $permissions['administer contexts'] = array(
     'name' => 'administer contexts',
     'roles' => array(),
     'module' => 'context_ui',
   );
 
-  // Exported permission: administer features.
+  // Exported permission: 'administer features'.
   $permissions['administer features'] = array(
     'name' => 'administer features',
     'roles' => array(),
     'module' => 'features',
   );
 
-  // Exported permission: administer field collections.
+  // Exported permission: 'administer field collections'.
   $permissions['administer field collections'] = array(
     'name' => 'administer field collections',
     'roles' => array(),
     'module' => 'field_collection',
   );
 
-  // Exported permission: administer filters.
+  // Exported permission: 'administer filters'.
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
     'roles' => array(),
     'module' => 'filter',
   );
 
-  // Exported permission: administer image styles.
+  // Exported permission: 'administer image styles'.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
     'roles' => array(),
     'module' => 'image',
   );
 
-  // Exported permission: administer menu.
+  // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
@@ -218,14 +218,14 @@ function ghg_access_user_default_permissions() {
     'module' => 'menu',
   );
 
-  // Exported permission: administer modules.
+  // Exported permission: 'administer modules'.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
     'roles' => array(),
     'module' => 'system',
   );
 
-  // Exported permission: administer nodes.
+  // Exported permission: 'administer nodes'.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
@@ -234,35 +234,35 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer pathauto.
+  // Exported permission: 'administer pathauto'.
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
     'roles' => array(),
     'module' => 'pathauto',
   );
 
-  // Exported permission: administer permissions.
+  // Exported permission: 'administer permissions'.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(),
     'module' => 'user',
   );
 
-  // Exported permission: administer site configuration.
+  // Exported permission: 'administer site configuration'.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(),
     'module' => 'system',
   );
 
-  // Exported permission: administer software updates.
+  // Exported permission: 'administer software updates'.
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
     'roles' => array(),
     'module' => 'system',
   );
 
-  // Exported permission: administer taxonomy.
+  // Exported permission: 'administer taxonomy'.
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
@@ -271,14 +271,14 @@ function ghg_access_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: administer themes.
+  // Exported permission: 'administer themes'.
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
     'roles' => array(),
     'module' => 'system',
   );
 
-  // Exported permission: administer url aliases.
+  // Exported permission: 'administer url aliases'.
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
     'roles' => array(
@@ -287,35 +287,35 @@ function ghg_access_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: administer users.
+  // Exported permission: 'administer users'.
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(),
     'module' => 'user',
   );
 
-  // Exported permission: administer views.
+  // Exported permission: 'administer views'.
   $permissions['administer views'] = array(
     'name' => 'administer views',
     'roles' => array(),
     'module' => 'views',
   );
 
-  // Exported permission: block IP addresses.
+  // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
     'roles' => array(),
     'module' => 'system',
   );
 
-  // Exported permission: bypass node access.
+  // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: cancel account.
+  // Exported permission: 'cancel account'.
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
@@ -324,7 +324,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: change own username.
+  // Exported permission: 'change own username'.
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
@@ -333,7 +333,14 @@ function ghg_access_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: create application content.
+  // Exported permission: 'context ajax block access'.
+  $permissions['context ajax block access'] = array(
+    'name' => 'context ajax block access',
+    'roles' => array(),
+    'module' => 'context_ui',
+  );
+
+  // Exported permission: 'create application content'.
   $permissions['create application content'] = array(
     'name' => 'create application content',
     'roles' => array(
@@ -343,7 +350,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: create page content.
+  // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
     'roles' => array(
@@ -352,7 +359,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: create url aliases.
+  // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
@@ -361,14 +368,14 @@ function ghg_access_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: delete any application content.
+  // Exported permission: 'delete any application content'.
   $permissions['delete any application content'] = array(
     'name' => 'delete any application content',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: delete any page content.
+  // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
@@ -377,7 +384,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own application content.
+  // Exported permission: 'delete own application content'.
   $permissions['delete own application content'] = array(
     'name' => 'delete own application content',
     'roles' => array(
@@ -386,7 +393,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own page content.
+  // Exported permission: 'delete own page content'.
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
@@ -395,7 +402,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete revisions.
+  // Exported permission: 'delete revisions'.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
@@ -404,21 +411,21 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: display drupal links.
+  // Exported permission: 'display drupal links'.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
     'roles' => array(),
     'module' => 'admin_menu',
   );
 
-  // Exported permission: edit any application content.
+  // Exported permission: 'edit any application content'.
   $permissions['edit any application content'] = array(
     'name' => 'edit any application content',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: edit any page content.
+  // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
     'roles' => array(
@@ -427,7 +434,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit bean view mode.
+  // Exported permission: 'edit bean view mode'.
   $permissions['edit bean view mode'] = array(
     'name' => 'edit bean view mode',
     'roles' => array(
@@ -436,7 +443,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: edit own application content.
+  // Exported permission: 'edit own application content'.
   $permissions['edit own application content'] = array(
     'name' => 'edit own application content',
     'roles' => array(
@@ -446,7 +453,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit own page content.
+  // Exported permission: 'edit own page content'.
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
     'roles' => array(
@@ -455,14 +462,14 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: execute php code.
+  // Exported permission: 'execute php code'.
   $permissions['execute php code'] = array(
     'name' => 'execute php code',
     'roles' => array(),
     'module' => 'devel',
   );
 
-  // Exported permission: flush caches.
+  // Exported permission: 'flush caches'.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
     'roles' => array(
@@ -471,21 +478,100 @@ function ghg_access_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: manage features.
+  // Exported permission: 'generate features'.
+  $permissions['generate features'] = array(
+    'name' => 'generate features',
+    'roles' => array(),
+    'module' => 'features',
+  );
+
+  // Exported permission: 'manage features'.
   $permissions['manage features'] = array(
     'name' => 'manage features',
     'roles' => array(),
     'module' => 'features',
   );
 
-  // Exported permission: notify of path changes.
+  // Exported permission: 'notify of path changes'.
   $permissions['notify of path changes'] = array(
     'name' => 'notify of path changes',
     'roles' => array(),
     'module' => 'pathauto',
   );
 
-  // Exported permission: revert revisions.
+  // Exported permission: 'publish any application content'.
+  $permissions['publish any application content'] = array(
+    'name' => 'publish any application content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'publish any content'.
+  $permissions['publish any content'] = array(
+    'name' => 'publish any content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'publish any page content'.
+  $permissions['publish any page content'] = array(
+    'name' => 'publish any page content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'publish editable application content'.
+  $permissions['publish editable application content'] = array(
+    'name' => 'publish editable application content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'publish editable content'.
+  $permissions['publish editable content'] = array(
+    'name' => 'publish editable content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'publish editable page content'.
+  $permissions['publish editable page content'] = array(
+    'name' => 'publish editable page content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'publish own application content'.
+  $permissions['publish own application content'] = array(
+    'name' => 'publish own application content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'publish own page content'.
+  $permissions['publish own page content'] = array(
+    'name' => 'publish own page content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'revert revisions'.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
@@ -494,21 +580,93 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: select account cancellation method.
+  // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
     'roles' => array(),
     'module' => 'user',
   );
 
-  // Exported permission: switch users.
+  // Exported permission: 'switch users'.
   $permissions['switch users'] = array(
     'name' => 'switch users',
     'roles' => array(),
     'module' => 'devel',
   );
 
-  // Exported permission: view bean page.
+  // Exported permission: 'unpublish any application content'.
+  $permissions['unpublish any application content'] = array(
+    'name' => 'unpublish any application content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'unpublish any content'.
+  $permissions['unpublish any content'] = array(
+    'name' => 'unpublish any content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'unpublish any page content'.
+  $permissions['unpublish any page content'] = array(
+    'name' => 'unpublish any page content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'unpublish editable application content'.
+  $permissions['unpublish editable application content'] = array(
+    'name' => 'unpublish editable application content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'unpublish editable content'.
+  $permissions['unpublish editable content'] = array(
+    'name' => 'unpublish editable content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'unpublish editable page content'.
+  $permissions['unpublish editable page content'] = array(
+    'name' => 'unpublish editable page content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'unpublish own application content'.
+  $permissions['unpublish own application content'] = array(
+    'name' => 'unpublish own application content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'unpublish own page content'.
+  $permissions['unpublish own page content'] = array(
+    'name' => 'unpublish own page content',
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'view bean page'.
   $permissions['view bean page'] = array(
     'name' => 'view bean page',
     'roles' => array(
@@ -517,7 +675,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: view bean revisions.
+  // Exported permission: 'view bean revisions'.
   $permissions['view bean revisions'] = array(
     'name' => 'view bean revisions',
     'roles' => array(
@@ -526,7 +684,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: view own unpublished content.
+  // Exported permission: 'view own unpublished content'.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
@@ -535,7 +693,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: view revisions.
+  // Exported permission: 'view revisions'.
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
@@ -544,7 +702,7 @@ function ghg_access_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: view the administration theme.
+  // Exported permission: 'view the administration theme'.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(

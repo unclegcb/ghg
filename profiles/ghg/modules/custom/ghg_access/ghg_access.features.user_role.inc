@@ -13,7 +13,7 @@ function ghg_access_user_default_roles() {
   // Exported role: staff admin.
   $roles['staff admin'] = array(
     'name' => 'staff admin',
-    'weight' => 2,
+    'weight' => 3,
   );
 
   return $roles;
