@@ -10,10 +10,9 @@ include_once 'ghg_eventmap.features.inc';
  * Implements hook_install().
  */
 function ghg_eventmap_install() {
-  libraries_load('ts_install_helpers');
   // Generate Taxonomy defaults.
 
-  $vocabs = array(
+  $stubbed_vocabs = array(
     'format' => array(
       array('name' => 'Constructed (Block)', 'weight' => 0),
       array('name' => 'Constructed (Standard)', 'weight' => 1),
@@ -30,5 +29,46 @@ function ghg_eventmap_install() {
       array('name' => 'Pro Tour Qualifier', 'weight' => 3),
     ),
   );
-  ts_install_helpers_create_terms($vocabs);
+  foreach ($stubbed_vocabs as $vocab => $terms) {
+    $vocabulary = taxonomy_vocabulary_machine_name_load($vocab);
+    if ($vocabulary) {
+      $return_terms[$vocab] = array();
+      foreach ($terms as $new_term) {
+        $return_terms[$vocab][] = ghg_eventmap_create_term($vocabulary, $new_term);
+      }
+    }
+  }
+}
+
+/**
+ * Helper function for creating a single taxonomy term and its children, grandchildren, etc.
+ */
+function ghg_eventmap_create_term($vocabulary, $new_term, $parent_tid = 0) {
+  $term = new stdClass();
+  $term->name = $new_term['name'];
+  $term->vid = $vocabulary->vid;
+  $term->format = filter_fallback_format();
+  $term->weight = (isset($new_term['weight'])) ? $new_term['weight'] : 0;
+  $term->parent = $parent_tid;
+  if (!empty($new_term['custom_fields'])) {
+    foreach ($new_term['custom_fields'] as $field_id => $field_val) {
+      // Handle single-cardinality:
+      if (!isset($field_val[0])) {
+        $field_val = array(0 => $field_val);
+      }
+      $term->{$field_id} = array(
+        LANGUAGE_NONE => $field_val,
+      );
+    }
+  }
+  taxonomy_term_save($term);
+
+  // If the current term has children defined, create them recursively.
+  if (isset($new_term['children'])) {
+    $term->children = array();
+    foreach ($new_term['children'] as $child_term) {
+      $term->children[] = ghg_eventmap_create_term($vocabulary, $child_term, $term->tid);
+    }
+  }
+  return $term;
 }

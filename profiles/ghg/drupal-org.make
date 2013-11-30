@@ -132,10 +132,10 @@ projects[ftools][subdir] = "developer"
 ;-----------------------------------------
 
 ; ts_install_helpers
-libraries[ts_install_helpers][download][type] = git
-libraries[ts_install_helpers][download][url] = git@github.com:thinkshout/ts_install_helpers.git
-libraries[ts_install_helpers][directory_name] = "ts_install_helpers"
-libraries[ts_install_helpers][type] = "library"
+;libraries[ts_install_helpers][download][type] = git
+;libraries[ts_install_helpers][download][url] = git@github.com:thinkshout/ts_install_helpers.git
+;libraries[ts_install_helpers][directory_name] = "ts_install_helpers"
+;libraries[ts_install_helpers][type] = "library"
 
 
 ; chosen

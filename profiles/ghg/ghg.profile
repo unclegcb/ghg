@@ -19,7 +19,6 @@ function ghg_install_tasks(){
  * Post install tasks
  */
 function ghg_custom_install(&$install_state) {
-  include_once 'libraries/ts_install_helpers/ts_install_helpers.inc'; // Load helper functions.
   // Disable DB blocks so we can use context to place everything.
   if (module_exists('block')) {
     //db_query("UPDATE {block} SET status = 0, region = ''");
