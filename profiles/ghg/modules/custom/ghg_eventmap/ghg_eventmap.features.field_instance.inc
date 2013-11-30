@@ -13,7 +13,13 @@ function ghg_eventmap_field_default_field_instances() {
   // Exported field_instance: 'node-event-body'
   $field_instances['node-event-body'] = array(
     'bundle' => 'event',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'summary' => '',
+        'value' => '<br>',
+        'format' => 'formatted',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -46,21 +52,22 @@ function ghg_eventmap_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'label' => 'Details',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 9,
     ),
   );
 
@@ -140,7 +147,7 @@ function ghg_eventmap_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 34,
+      'weight' => 4,
     ),
   );
 
@@ -191,7 +198,7 @@ function ghg_eventmap_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 35,
+      'weight' => 6,
     ),
   );
 
@@ -305,7 +312,7 @@ function ghg_eventmap_field_default_field_instances() {
         ),
       ),
       'type' => 'geocoder',
-      'weight' => 33,
+      'weight' => 3,
     ),
   );
 
@@ -321,6 +328,7 @@ function ghg_eventmap_field_default_field_instances() {
         'administrative_area' => '',
         'postal_code' => '',
         'country' => 'US',
+        'name_line' => '',
       ),
     ),
     'deleted' => 0,
@@ -384,7 +392,7 @@ function ghg_eventmap_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 32,
+      'weight' => 2,
     ),
   );
 
@@ -452,7 +460,7 @@ function ghg_eventmap_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 36,
+      'weight' => 7,
     ),
   );
 
@@ -510,14 +518,14 @@ function ghg_eventmap_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 38,
+      'weight' => 5,
     ),
   );
 
   // Exported field_instance: 'node-event-field_type'
   $field_instances['node-event-field_type'] = array(
     'bundle' => 'event',
-    'default_value' => array(),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -552,7 +560,7 @@ function ghg_eventmap_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_type',
     'label' => 'Type',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -561,14 +569,14 @@ function ghg_eventmap_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 37,
+      'weight' => 8,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
   t('Date');
+  t('Details');
   t('Format');
   t('Geolocation');
   t('Location');
