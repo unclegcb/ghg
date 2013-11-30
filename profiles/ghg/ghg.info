@@ -54,5 +54,7 @@ dependencies[] = ghg_applications
 dependencies[] = ghg_basic_content_types
 dependencies[] = ghg_common
 dependencies[] = ghg_display
+dependencies[] = ghg_eventmap
+dependencies[] = ghg_wysiwyg
 
 files[] = ghg.profile
