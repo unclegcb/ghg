@@ -69,7 +69,7 @@ projects[geophp][subdir] = "contrib"
 projects[leaflet][subdir] = "contrib"
 projects[leaflet][download][type] = git
 projects[leaflet][download][branch] = "7.x-1.x"
-projects[leaflet][download][revision] = "db57dff"
+projects[leaflet][download][revision] = "3374eca"
 
 ; libraries
 projects[libraries][version] = "2.1"
