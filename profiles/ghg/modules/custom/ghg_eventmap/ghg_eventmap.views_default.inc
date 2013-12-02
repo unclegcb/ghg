@@ -35,7 +35,7 @@ function ghg_eventmap_views_default_views() {
       'secondary_label' => 'Advanced options',
     ),
     'field_date_time_value' => array(
-      'bef_format' => 'bef_datepicker',
+      'bef_format' => 'default',
       'more_options' => array(
         'is_secondary' => 0,
         'bef_filter_description' => '',
@@ -47,7 +47,7 @@ function ghg_eventmap_views_default_views() {
       ),
     ),
     'field_date_time_value2' => array(
-      'bef_format' => 'bef_datepicker',
+      'bef_format' => 'default',
       'more_options' => array(
         'is_secondary' => 0,
         'bef_filter_description' => '',
@@ -95,17 +95,16 @@ function ghg_eventmap_views_default_views() {
   $handler->display->display_options['style_options']['description_field'] = '#rendered_entity';
   $handler->display->display_options['style_options']['view_mode'] = 'teaser';
   $handler->display->display_options['style_options']['map'] = 'OSM Mapnik';
-  $handler->display->display_options['style_options']['zoom']['initialZoom'] = '-1';
+  $handler->display->display_options['style_options']['zoom']['initialZoom'] = '0';
   $handler->display->display_options['style_options']['zoom']['minZoom'] = '0';
   $handler->display->display_options['style_options']['zoom']['maxZoom'] = '18';
   $handler->display->display_options['style_options']['vector_display']['stroke'] = 0;
   $handler->display->display_options['style_options']['vector_display']['fill'] = 0;
   $handler->display->display_options['style_options']['vector_display']['clickable'] = 0;
-  /* Footer: Global: Unfiltered text */
-  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
-  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['content'] = 'If you have an account, you can <a href="node/add/event">click here to submit an event</a>. If you need an account, <a href="user/register">click here</a>.';
+  /* Header: Entity: Rendered entity */
+  $handler->display->display_options['header']['entity']['id'] = 'entity';
+  $handler->display->display_options['header']['entity']['table'] = 'entity__global';
+  $handler->display->display_options['header']['entity']['field'] = 'entity';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -234,13 +233,12 @@ function ghg_eventmap_views_default_views() {
   $handler->display->display_options['filters']['field_format_tid']['table'] = 'field_data_field_format';
   $handler->display->display_options['filters']['field_format_tid']['field'] = 'field_format_tid';
   $handler->display->display_options['filters']['field_format_tid']['value'] = array(
-    1 => '1',
-    2 => '2',
-    3 => '3',
-    4 => '4',
-    5 => '5',
-    6 => '6',
     7 => '7',
+    6 => '6',
+    8 => '8',
+    3 => '3',
+    5 => '5',
+    4 => '4',
   );
   $handler->display->display_options['filters']['field_format_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_format_tid']['exposed'] = TRUE;
@@ -252,7 +250,6 @@ function ghg_eventmap_views_default_views() {
   $handler->display->display_options['filters']['field_format_tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
-    4 => 0,
     3 => 0,
   );
   $handler->display->display_options['filters']['field_format_tid']['group_info']['label'] = 'Format (field_format)';
@@ -271,8 +268,8 @@ function ghg_eventmap_views_default_views() {
   $handler->display->display_options['filters']['field_type_tid']['table'] = 'field_data_field_type';
   $handler->display->display_options['filters']['field_type_tid']['field'] = 'field_type_tid';
   $handler->display->display_options['filters']['field_type_tid']['value'] = array(
-    8 => '8',
     9 => '9',
+    12 => '12',
     10 => '10',
     11 => '11',
   );
@@ -286,7 +283,6 @@ function ghg_eventmap_views_default_views() {
   $handler->display->display_options['filters']['field_type_tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
-    4 => 0,
     3 => 0,
   );
   $handler->display->display_options['filters']['field_type_tid']['type'] = 'select';

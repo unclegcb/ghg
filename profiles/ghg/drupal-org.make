@@ -79,6 +79,14 @@ projects[libraries][subdir] = "contrib"
 projects[link][version] = "1.2"
 projects[link][subdir] = "contrib"
 
+; mandrill
+projects[mandrill][version] = "1.5"
+projects[mandrill][subdir] = "contrib"
+
+; mailsystem
+projects[mailsystem][version] = "2.34"
+projects[mailsystem][subdir] = "contrib"
+
 ; pathauto requires token
 projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = "contrib"
