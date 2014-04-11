@@ -67,51 +67,9 @@ function ghg_common_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_dci_number'
-  $field_instances['user-user-field_dci_number'] = array(
-    'bundle' => 'user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '<i>optional</i>',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => ' ',
-        ),
-        'type' => 'number_integer',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'user',
-    'field_name' => 'field_dci_number',
-    'label' => 'DCI#',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 7,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('<i>optional</i>');
   t('Address');
-  t('DCI#');
 
   return $field_instances;
 }
