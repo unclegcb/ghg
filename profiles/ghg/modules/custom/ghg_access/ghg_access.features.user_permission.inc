@@ -364,7 +364,9 @@ function ghg_access_user_default_permissions() {
   // Exported permission: delete any application content.
   $permissions['delete any application content'] = array(
     'name' => 'delete any application content',
-    'roles' => array(),
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
     'module' => 'node',
   );
 
@@ -414,7 +416,9 @@ function ghg_access_user_default_permissions() {
   // Exported permission: edit any application content.
   $permissions['edit any application content'] = array(
     'name' => 'edit any application content',
-    'roles' => array(),
+    'roles' => array(
+      'staff admin' => 'staff admin',
+    ),
     'module' => 'node',
   );
 
@@ -441,6 +445,7 @@ function ghg_access_user_default_permissions() {
     'name' => 'edit own application content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
+      'ghg board' => 'ghg board',
       'staff admin' => 'staff admin',
     ),
     'module' => 'node',

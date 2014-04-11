@@ -2,6 +2,7 @@ name = GHG Access
 description = Permissions settings
 core = 7.x
 package = Features
+php = 5.2.4
 version = 7.x-0.1
 project = ghg_access
 dependencies[] = admin_menu
