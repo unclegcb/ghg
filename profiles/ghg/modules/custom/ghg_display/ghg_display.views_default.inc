@@ -43,7 +43,7 @@ function ghg_display_views_default_views() {
   $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area_text_custom']['content'] = '<a href=\'node/add/application\'>Click Here</a> to create an application. Return to this page later to edit.';
+  $handler->display->display_options['empty']['area_text_custom']['content'] = '<a href=\'/node/add/application\'>Click Here</a> to create an application. Return to this page later to edit.';
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
