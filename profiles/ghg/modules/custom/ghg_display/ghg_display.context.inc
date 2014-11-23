@@ -60,12 +60,6 @@ function ghg_display_context_default_contexts() {
           'region' => 'header',
           'weight' => '1',
         ),
-        'user-login' => array(
-          'module' => 'user',
-          'delta' => 'login',
-          'region' => 'header',
-          'weight' => '0',
-        ),
         'ghg_basic_content_types-footer' => array(
           'module' => 'ghg_basic_content_types',
           'delta' => 'footer',
