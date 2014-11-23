@@ -54,17 +54,17 @@ function ghg_display_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'ghg_basic_content_types-donate' => array(
+          'module' => 'ghg_basic_content_types',
+          'delta' => 'donate',
+          'region' => 'header',
+          'weight' => '1',
+        ),
         'user-login' => array(
           'module' => 'user',
           'delta' => 'login',
           'region' => 'header',
-          'weight' => '-9',
-        ),
-        'ghg_basic_content_types-donate' => array(
-          'module' => 'ghg_basic_content_types',
-          'delta' => 'donate',
-          'region' => 'footer',
-          'weight' => '-13',
+          'weight' => '0',
         ),
         'ghg_basic_content_types-footer' => array(
           'module' => 'ghg_basic_content_types',
