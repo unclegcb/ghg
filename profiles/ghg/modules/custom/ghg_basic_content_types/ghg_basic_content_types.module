@@ -64,14 +64,18 @@ function ghg_basic_content_types_footer() {
 
 function ghg_basic_content_types_donate_form() {
   $items = array(
-    '#markup' => '<div align="right" float="right">
-<p>Help a deserving young member of the Magic community go to college!</p>
+    '#markup' => '<div align="right" float="none">',
+  );
+  global $user;
+  if (!$user->uid) {
+    $items['#markup'] .= '<p><a href="user">Login</a></p>';
+  }
+  $items['#markup'] .= '<p>Help a deserving young member of the Magic community go to college!</p>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="MN7SLJZ6S36BA">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img align = "right" alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</div>',
-  );
+<img align = "right" alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>
+</div>';
   return $items;
 }
