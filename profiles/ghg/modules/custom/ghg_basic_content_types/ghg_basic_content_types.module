@@ -68,7 +68,7 @@ function ghg_basic_content_types_donate_form() {
   );
   global $user;
   if (!$user->uid) {
-    $items['#markup'] .= '<p><a href="user">Login</a></p>';
+    $items['#markup'] .= '<p><a href="/user">Login</a></p>';
   }
   $items['#markup'] .= '<p>Help a deserving young member of the Magic community go to college!</p>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
