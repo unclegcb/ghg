@@ -40,6 +40,22 @@ function ghg_eventmap_field_default_field_bases() {
     'type' => 'datetime',
   );
 
+  // Exported field_base: 'field_event_location'
+  $field_bases['field_event_location'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_event_location',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'addressfield',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'addressfield',
+  );
+
   // Exported field_base: 'field_format'
   $field_bases['field_format'] = array(
     'active' => 1,
@@ -123,22 +139,6 @@ function ghg_eventmap_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'geofield',
-  );
-
-  // Exported field_base: 'field_location'
-  $field_bases['field_location'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_location',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'addressfield',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'addressfield',
   );
 
   // Exported field_base: 'field_official_link'

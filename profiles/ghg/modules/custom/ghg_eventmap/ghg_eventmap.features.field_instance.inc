@@ -151,6 +151,86 @@ function ghg_eventmap_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-event-field_event_location'
+  $field_instances['node-event-field_event_location'] = array(
+    'bundle' => 'event',
+    'default_value' => array(
+      0 => array(
+        'element_key' => 'node|event|field_event_location|und|0',
+        'thoroughfare' => '',
+        'premise' => '',
+        'locality' => '',
+        'administrative_area' => '',
+        'postal_code' => '',
+        'country' => 'US',
+        'name_line' => '',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'brief' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 1,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_location',
+    'label' => 'Location',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'addressfield',
+      'settings' => array(
+        'available_countries' => array(),
+        'format_handlers' => array(
+          'address' => 'address',
+          'name-oneline' => 'name-oneline',
+          'address-hide-country' => 0,
+          'organisation' => 0,
+          'name-full' => 0,
+        ),
+      ),
+      'type' => 'addressfield_standard',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-event-field_format'
   $field_instances['node-event-field_format'] = array(
     'bundle' => 'event',
@@ -296,7 +376,7 @@ function ghg_eventmap_field_default_field_instances() {
       'module' => 'geocoder',
       'settings' => array(
         'delta_handling' => 'default',
-        'geocoder_field' => 'field_location',
+        'geocoder_field' => 'field_event_location',
         'geocoder_handler' => 'google',
         'handler_settings' => array(
           'google' => array(
@@ -313,86 +393,6 @@ function ghg_eventmap_field_default_field_instances() {
       ),
       'type' => 'geocoder',
       'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'node-event-field_location'
-  $field_instances['node-event-field_location'] = array(
-    'bundle' => 'event',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'node|event|field_location|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'US',
-        'name_line' => '',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'brief' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 1,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_location',
-    'label' => 'Location',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'addressfield',
-      'settings' => array(
-        'available_countries' => array(),
-        'format_handlers' => array(
-          'address' => 'address',
-          'name-oneline' => 'name-oneline',
-          'address-hide-country' => 0,
-          'organisation' => 0,
-          'name-full' => 0,
-        ),
-      ),
-      'type' => 'addressfield_standard',
-      'weight' => 2,
     ),
   );
 
@@ -436,6 +436,7 @@ function ghg_eventmap_field_default_field_instances() {
     'label' => 'Official Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -449,6 +450,7 @@ function ghg_eventmap_field_default_field_instances() {
       'enable_tokens' => 0,
       'rel_remove' => 'default',
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
