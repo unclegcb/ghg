@@ -176,24 +176,6 @@ function ghg_applications_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_rating'
-  $field_bases['field_rating'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_rating',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'fivestar',
-    'settings' => array(
-      'axis' => 'rating',
-    ),
-    'translatable' => 0,
-    'type' => 'fivestar',
-  );
-
   // Exported field_base: 'field_sat_act_score'
   $field_bases['field_sat_act_score'] = array(
     'active' => 1,
