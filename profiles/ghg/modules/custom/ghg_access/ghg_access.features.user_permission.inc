@@ -328,6 +328,13 @@ function ghg_access_user_default_permissions() {
     'module' => 'views',
   );
 
+  // Exported permission: 'administer voting api'.
+  $permissions['administer voting api'] = array(
+    'name' => 'administer voting api',
+    'roles' => array(),
+    'module' => 'votingapi',
+  );
+
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
@@ -551,6 +558,17 @@ function ghg_access_user_default_permissions() {
     'module' => 'publishcontent',
   );
 
+  // Exported permission: 'rate content'.
+  $permissions['rate content'] = array(
+    'name' => 'rate content',
+    'roles' => array(
+      'ghg board' => 'ghg board',
+      'megauser' => 'megauser',
+      'staff admin' => 'staff admin',
+    ),
+    'module' => 'fivestar',
+  );
+
   // Exported permission: 'revert revisions'.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -613,6 +631,7 @@ function ghg_access_user_default_permissions() {
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
+      'authenticated user' => 'authenticated user',
       'megauser' => 'megauser',
       'staff admin' => 'staff admin',
     ),
