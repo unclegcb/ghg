@@ -301,6 +301,61 @@ b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Pleas
     ),
   );
 
+  // Exported field_instance: 'node-application-field_rating'
+  $field_instances['node-application-field_rating'] = array(
+    'bundle' => 'application',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'brief' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'fivestar',
+        'settings' => array(
+          'expose' => 1,
+          'style' => 'user',
+          'text' => 'user',
+          'widget' => array(
+            'fivestar_widget' => 'default',
+          ),
+        ),
+        'type' => 'fivestar_formatter_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_rating',
+    'label' => 'Rating',
+    'required' => 0,
+    'settings' => array(
+      'allow_clear' => 1,
+      'allow_ownvote' => 0,
+      'allow_revote' => 1,
+      'stars' => 5,
+      'target' => 'none',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'fivestar',
+      'settings' => array(),
+      'type' => 'exposed',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-application-field_sat_act_score'
   $field_instances['node-application-field_sat_act_score'] = array(
     'bundle' => 'application',
@@ -462,6 +517,7 @@ b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Pleas
 <li>a)  What can be done to increase diversity in the Magic community?  What factors, if any, do you see as inhibiting or encouraging diversity?</li>
 <li>b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Please explain the factors that would influence your decision.</li>
 </ul>');
+  t('Rating');
   t('SAT/ACT Score');
   t('Student Aid Report');
   t('Submission Status');
