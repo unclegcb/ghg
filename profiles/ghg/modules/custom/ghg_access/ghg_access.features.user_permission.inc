@@ -342,6 +342,7 @@ function ghg_access_user_default_permissions() {
     'name' => 'bypass node access',
     'roles' => array(
       'megauser' => 'megauser',
+      'staff admin' => 'staff admin',
     ),
     'module' => 'node',
   );
@@ -484,7 +485,6 @@ function ghg_access_user_default_permissions() {
   $permissions['edit own application content'] = array(
     'name' => 'edit own application content',
     'roles' => array(
-      'authenticated user' => 'authenticated user',
       'ghg board' => 'ghg board',
       'staff admin' => 'staff admin',
     ),
