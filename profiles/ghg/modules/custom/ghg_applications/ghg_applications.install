@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Install code for the GHG Common feature.
+ */
+
+/**
+ * Enable entityform module.
+ */
+function ghg_applications_update_7000() {
+  module_enable(array('entityform'));
+}

@@ -102,6 +102,11 @@ function ghg_applications_views_default_views() {
   $handler->display->display_options['relationships']['votingapi_cache_1']['id'] = 'votingapi_cache_1';
   $handler->display->display_options['relationships']['votingapi_cache_1']['table'] = 'node';
   $handler->display->display_options['relationships']['votingapi_cache_1']['field'] = 'votingapi_cache';
+  $handler->display->display_options['relationships']['votingapi_cache_1']['votingapi'] = array(
+    'value_type' => 'percent',
+    'tag' => 'rating',
+    'function' => 'average',
+  );
   /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
@@ -198,70 +203,6 @@ function ghg_applications_views_default_views() {
       'operator' => 'not empty',
       'value' => array(
         'value' => '',
-        'min' => '',
-        'max' => '',
-      ),
-    ),
-  );
-  /* Filter criterion: Vote results: Value */
-  $handler->display->display_options['filters']['value_1']['id'] = 'value_1';
-  $handler->display->display_options['filters']['value_1']['table'] = 'votingapi_cache';
-  $handler->display->display_options['filters']['value_1']['field'] = 'value';
-  $handler->display->display_options['filters']['value_1']['relationship'] = 'votingapi_cache';
-  $handler->display->display_options['filters']['value_1']['operator'] = '<=';
-  $handler->display->display_options['filters']['value_1']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['value_1']['expose']['operator_id'] = 'value_1_op';
-  $handler->display->display_options['filters']['value_1']['expose']['label'] = 'Number of Votes';
-  $handler->display->display_options['filters']['value_1']['expose']['use_operator'] = TRUE;
-  $handler->display->display_options['filters']['value_1']['expose']['operator'] = 'value_1_op';
-  $handler->display->display_options['filters']['value_1']['expose']['identifier'] = 'value_1';
-  $handler->display->display_options['filters']['value_1']['expose']['multiple'] = TRUE;
-  $handler->display->display_options['filters']['value_1']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    4 => 0,
-    6 => 0,
-    3 => 0,
-    5 => 0,
-  );
-  $handler->display->display_options['filters']['value_1']['is_grouped'] = TRUE;
-  $handler->display->display_options['filters']['value_1']['group_info']['label'] = 'Number of Votes';
-  $handler->display->display_options['filters']['value_1']['group_info']['identifier'] = 'value_1';
-  $handler->display->display_options['filters']['value_1']['group_info']['widget'] = 'radios';
-  $handler->display->display_options['filters']['value_1']['group_info']['multiple'] = TRUE;
-  $handler->display->display_options['filters']['value_1']['group_info']['group_items'] = array(
-    1 => array(
-      'title' => 'None',
-      'operator' => 'empty',
-      'value' => array(
-        'value' => '',
-        'min' => '',
-        'max' => '',
-      ),
-    ),
-    2 => array(
-      'title' => '1',
-      'operator' => '=',
-      'value' => array(
-        'value' => '1',
-        'min' => '',
-        'max' => '',
-      ),
-    ),
-    3 => array(
-      'title' => '2',
-      'operator' => '=',
-      'value' => array(
-        'value' => '2',
-        'min' => '',
-        'max' => '',
-      ),
-    ),
-    4 => array(
-      'title' => '3 or more',
-      'operator' => '>',
-      'value' => array(
-        'value' => '2',
         'min' => '',
         'max' => '',
       ),

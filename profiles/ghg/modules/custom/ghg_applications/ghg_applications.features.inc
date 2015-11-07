@@ -21,6 +21,44 @@ function ghg_applications_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_default_entityform_type().
+ */
+function ghg_applications_default_entityform_type() {
+  $items = array();
+  $items['2016_application'] = entity_import('entityform_type', '{
+    "type" : "2016_application",
+    "label" : "2016 GHG Scholarship Application",
+    "data" : {
+      "draftable" : 1,
+      "draft_redirect_path" : "",
+      "draft_button_text" : "",
+      "draft_save_text" : { "value" : "\\u003Cbr\\u003E", "format" : "formatted" },
+      "submit_button_text" : "",
+      "submit_confirm_msg" : "",
+      "your_submissions" : "",
+      "disallow_resubmit_msg" : "",
+      "delete_confirm_msg" : "",
+      "page_title_view" : "",
+      "preview_page" : 0,
+      "submission_page_title" : "",
+      "submission_text" : { "value" : "\\u003Cbr\\u003E", "format" : "formatted" },
+      "submission_show_submitted" : 0,
+      "submissions_view" : "default",
+      "user_submissions_view" : "default",
+      "form_status" : "ENTITYFORM_OPEN",
+      "roles" : { "2" : "2", "4" : "4", "6" : "6", "3" : "3", "5" : "5", "1" : 0 },
+      "resubmit_action" : "old",
+      "redirect_path" : "",
+      "instruction_pre" : { "value" : "\\u003Cbr\\u003E", "format" : "formatted" }
+    },
+    "weight" : "0",
+    "rdf_mapping" : [],
+    "paths" : []
+  }');
+  return $items;
+}
+
+/**
  * Implements hook_node_info().
  */
 function ghg_applications_node_info() {
