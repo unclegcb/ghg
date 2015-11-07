@@ -103,5 +103,4 @@ features[user_permission][] = view the administration theme
 features[user_role][] = ghg board
 features[user_role][] = megauser
 features[user_role][] = staff admin
-mtime = 1430593438
 project path = profiles/ghg/modules/custom

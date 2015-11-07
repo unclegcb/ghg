@@ -38,7 +38,7 @@ function ghg_common_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mandrill_from';
-  $strongarm->value = 'gcb@gamershelpinggamers.org';
+  $strongarm->value = 'info@gamershelpinggamers.org';
   $export['mandrill_from'] = $strongarm;
 
   $strongarm = new stdClass();

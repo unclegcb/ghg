@@ -48,5 +48,4 @@ features[variable][] = user_mail_status_canceled_body
 features[variable][] = user_mail_status_canceled_notify
 features[variable][] = user_mail_status_canceled_subject
 features[variable][] = user_register
-mtime = 1414367984
 project path = profiles/ghg/modules/custom

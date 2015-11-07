@@ -10,20 +10,10 @@
 function ghg_common_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'user-user-field_address'
+  // Exported field_instance: 'user-user-field_address'.
   $field_instances['user-user-field_address'] = array(
     'bundle' => 'user',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'user|user|field_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -54,6 +44,7 @@ function ghg_common_field_default_field_instances() {
         'available_countries' => array(
           'US' => 'US',
         ),
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 0,
