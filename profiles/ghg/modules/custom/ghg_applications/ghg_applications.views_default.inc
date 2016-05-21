@@ -342,5 +342,132 @@ function ghg_applications_views_default_views() {
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $export['2015_applications'] = $view;
 
+  $view = new view();
+  $view->name = 'applications_2016';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'entityform';
+  $view->human_name = 'Applications 2016';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Applications 2016';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    6 => '6',
+    5 => '5',
+    3 => '3',
+  );
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'entityform_id' => 'entityform_id',
+    'field_full_name' => 'field_full_name',
+    'field_rating' => 'field_rating',
+  );
+  $handler->display->display_options['style_options']['default'] = 'field_full_name';
+  $handler->display->display_options['style_options']['info'] = array(
+    'entityform_id' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_full_name' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_rating' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Header: Global: Result summary */
+  $handler->display->display_options['header']['result']['id'] = 'result';
+  $handler->display->display_options['header']['result']['table'] = 'views';
+  $handler->display->display_options['header']['result']['field'] = 'result';
+  $handler->display->display_options['header']['result']['content'] = 'Displaying @start - @end Applications of @total';
+  /* Field: Entityform Submission: Entityform submission ID */
+  $handler->display->display_options['fields']['entityform_id']['id'] = 'entityform_id';
+  $handler->display->display_options['fields']['entityform_id']['table'] = 'entityform';
+  $handler->display->display_options['fields']['entityform_id']['field'] = 'entityform_id';
+  $handler->display->display_options['fields']['entityform_id']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['entityform_id']['separator'] = '';
+  /* Field: Entityform Submission: Full Name */
+  $handler->display->display_options['fields']['field_full_name']['id'] = 'field_full_name';
+  $handler->display->display_options['fields']['field_full_name']['table'] = 'field_data_field_full_name';
+  $handler->display->display_options['fields']['field_full_name']['field'] = 'field_full_name';
+  $handler->display->display_options['fields']['field_full_name']['label'] = 'Name';
+  $handler->display->display_options['fields']['field_full_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_full_name']['alter']['path'] = 'entityform/[entityform_id]';
+  /* Field: Field: Rating */
+  $handler->display->display_options['fields']['field_rating']['id'] = 'field_rating';
+  $handler->display->display_options['fields']['field_rating']['table'] = 'field_data_field_rating';
+  $handler->display->display_options['fields']['field_rating']['field'] = 'field_rating';
+  $handler->display->display_options['fields']['field_rating']['click_sort_column'] = 'rating';
+  $handler->display->display_options['fields']['field_rating']['settings'] = array(
+    'widget' => array(
+      'fivestar_widget' => 'default',
+    ),
+    'expose' => 1,
+    'style' => 'user',
+    'text' => 'none',
+  );
+  /* Filter criterion: Entityform Submission: Entityform Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'entityform';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    '2016_application' => '2016_application',
+  );
+  /* Filter criterion: Entityform Submission: Full Name (field_full_name) */
+  $handler->display->display_options['filters']['field_full_name_value']['id'] = 'field_full_name_value';
+  $handler->display->display_options['filters']['field_full_name_value']['table'] = 'field_data_field_full_name';
+  $handler->display->display_options['filters']['field_full_name_value']['field'] = 'field_full_name_value';
+  $handler->display->display_options['filters']['field_full_name_value']['operator'] = '!=';
+  /* Filter criterion: Field: Essay 1: Personal Statement (field_essay_1) */
+  $handler->display->display_options['filters']['field_essay_1_value']['id'] = 'field_essay_1_value';
+  $handler->display->display_options['filters']['field_essay_1_value']['table'] = 'field_data_field_essay_1';
+  $handler->display->display_options['filters']['field_essay_1_value']['field'] = 'field_essay_1_value';
+  $handler->display->display_options['filters']['field_essay_1_value']['operator'] = '!=';
+  /* Filter criterion: Field: Essay 2: What is your favorite magic card or mechanic and why? (field_essay_2) */
+  $handler->display->display_options['filters']['field_essay_2_value']['id'] = 'field_essay_2_value';
+  $handler->display->display_options['filters']['field_essay_2_value']['table'] = 'field_data_field_essay_2';
+  $handler->display->display_options['filters']['field_essay_2_value']['field'] = 'field_essay_2_value';
+  $handler->display->display_options['filters']['field_essay_2_value']['operator'] = '!=';
+  /* Filter criterion: Field: Essay 3: What is your least favorite magic card or mechanic and why? (field_essay_3) */
+  $handler->display->display_options['filters']['field_essay_3_value']['id'] = 'field_essay_3_value';
+  $handler->display->display_options['filters']['field_essay_3_value']['table'] = 'field_data_field_essay_3';
+  $handler->display->display_options['filters']['field_essay_3_value']['field'] = 'field_essay_3_value';
+  $handler->display->display_options['filters']['field_essay_3_value']['operator'] = '!=';
+  /* Filter criterion: Field: Essay 4: Pick One (field_essay_4) */
+  $handler->display->display_options['filters']['field_essay_4_value']['id'] = 'field_essay_4_value';
+  $handler->display->display_options['filters']['field_essay_4_value']['table'] = 'field_data_field_essay_4';
+  $handler->display->display_options['filters']['field_essay_4_value']['field'] = 'field_essay_4_value';
+  $handler->display->display_options['filters']['field_essay_4_value']['operator'] = '!=';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'applications-2016';
+  $export['applications_2016'] = $view;
+
   return $export;
 }

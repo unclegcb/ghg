@@ -184,6 +184,50 @@ The GHG scholarships are need based and we use the FAFSA report to assess this n
     ),
   );
 
+  // Exported field_instance:
+  // 'entityform-2016_application-field_finalist_rating'.
+  $field_instances['entityform-2016_application-field_finalist_rating'] = array(
+    'bundle' => '2016_application',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'fivestar',
+        'settings' => array(
+          'expose' => TRUE,
+          'style' => 'average',
+          'text' => 'average',
+          'widget' => array(
+            'fivestar_widget' => NULL,
+          ),
+        ),
+        'type' => 'fivestar_formatter_default',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_finalist_rating',
+    'label' => 'Finalist Rating',
+    'required' => 0,
+    'settings' => array(
+      'allow_clear' => 1,
+      'allow_ownvote' => 0,
+      'allow_revote' => 1,
+      'stars' => 5,
+      'target' => 'none',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'fivestar',
+      'settings' => array(),
+      'type' => 'exposed',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'entityform-2016_application-field_full_name'.
   $field_instances['entityform-2016_application-field_full_name'] = array(
     'bundle' => '2016_application',
@@ -250,6 +294,49 @@ The GHG scholarships are need based and we use the FAFSA report to assess this n
       ),
       'type' => 'text_textarea',
       'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-2016_application-field_rating'.
+  $field_instances['entityform-2016_application-field_rating'] = array(
+    'bundle' => '2016_application',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'fivestar',
+        'settings' => array(
+          'expose' => TRUE,
+          'style' => 'average',
+          'text' => 'average',
+          'widget' => array(
+            'fivestar_widget' => NULL,
+          ),
+        ),
+        'type' => 'fivestar_formatter_default',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_rating',
+    'label' => 'Rating',
+    'required' => 0,
+    'settings' => array(
+      'allow_clear' => 1,
+      'allow_ownvote' => 0,
+      'allow_revote' => 1,
+      'stars' => 5,
+      'target' => 'none',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'fivestar',
+      'settings' => array(),
+      'type' => 'exposed',
+      'weight' => 10,
     ),
   );
 
