@@ -22,31 +22,9 @@ function ghg_common_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'mail_system';
   $strongarm->value = array(
-    'default-system' => 'MandrillMailSystem',
-    'mandrill_test' => 'MandrillMailSystem',
+    'default-system' => 'DefaultMailSystem',
   );
   $export['mail_system'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mandrill_api_key';
-  $strongarm->value = 'V0JaIFAvJORIzb3E6I6uCQ';
-  $export['mandrill_api_key'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mandrill_from';
-  $strongarm->value = 'info@gamershelpinggamers.org';
-  $export['mandrill_from'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mandrill_from_name';
-  $strongarm->value = 'Gamers Helping Gamers';
-  $export['mandrill_from_name'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -141,16 +119,26 @@ This link expires in one day and nothing will happen if it is not used.
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_mail_password_reset_body';
-  $strongarm->value = '[user:name],
+  $strongarm->value = '<p>[user:name],
+</p>
 
+<p>
 A request to reset the password for your account has been made at [site:name].
+</p>
 
+<p>
 You may now log in by clicking this link or copying and pasting it to your browser:
+</p>
 
+<p>
 [user:one-time-login-url]
+</p>
 
+<p>
 This link can only be used once to log in and will lead you to a page where you can set your password. It expires after one day and nothing will happen if it\'s not used.
+</p>
 
+<p>
 --  [site:name] team';
   $export['user_mail_password_reset_body'] = $strongarm;
 
@@ -192,19 +180,29 @@ password: Your password
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_mail_register_no_approval_required_body';
-  $strongarm->value = '[user:name],
+  $strongarm->value = '<p>[user:name],</p>
 
-Thank you for registering at [site:name]. You may now log in by clicking this link or copying and pasting it to your browser:
+<p>Thank you for registering at [site:name]. You may now log in by clicking this link or copying and pasting it to your browser:
+</p>
 
+<p>
 [user:one-time-login-url]
+</p>
 
+<p>
 This link can only be used once to log in and will lead you to a page where you can set your password.
+</p>
 
+<p>
 After setting your password, you will be able to log in at [site:login-url] in the future using:
+</p>
 
-username: [user:name]
+<p>
+username: [user:name]<br>
 password: Your password
+</p>
 
+<p>
 --  [site:name] team';
   $export['user_mail_register_no_approval_required_body'] = $strongarm;
 

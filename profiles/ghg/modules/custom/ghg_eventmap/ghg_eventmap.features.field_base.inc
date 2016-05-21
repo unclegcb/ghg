@@ -10,14 +10,13 @@
 function ghg_eventmap_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_date_time'
+  // Exported field_base: 'field_date_time'.
   $field_bases['field_date_time'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_date_time',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',
@@ -40,14 +39,13 @@ function ghg_eventmap_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_event_location'
+  // Exported field_base: 'field_event_location'.
   $field_bases['field_event_location'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_event_location',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'addressfield',
@@ -56,21 +54,13 @@ function ghg_eventmap_field_default_field_bases() {
     'type' => 'addressfield',
   );
 
-  // Exported field_base: 'field_format'
+  // Exported field_base: 'field_format'.
   $field_bases['field_format'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_format',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -90,14 +80,13 @@ function ghg_eventmap_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_geolocation'
+  // Exported field_base: 'field_geolocation'.
   $field_bases['field_geolocation'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_geolocation',
-    'foreign keys' => array(),
     'indexes' => array(
       'bbox' => array(
         0 => 'top',
@@ -141,14 +130,13 @@ function ghg_eventmap_field_default_field_bases() {
     'type' => 'geofield',
   );
 
-  // Exported field_base: 'field_official_link'
+  // Exported field_base: 'field_official_link'.
   $field_bases['field_official_link'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_official_link',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -171,21 +159,13 @@ function ghg_eventmap_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_time'
+  // Exported field_base: 'field_time'.
   $field_bases['field_time'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_time',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -200,21 +180,13 @@ function ghg_eventmap_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_type'
+  // Exported field_base: 'field_type'.
   $field_bases['field_type'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_type',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',

@@ -15,6 +15,7 @@ function ghg_applications_user_default_permissions() {
     'name' => 'administer entityform types',
     'roles' => array(
       'megauser' => 'megauser',
+      'staff admin' => 'staff admin',
     ),
     'module' => 'entityform',
   );
@@ -24,6 +25,7 @@ function ghg_applications_user_default_permissions() {
     'name' => 'delete any entityform',
     'roles' => array(
       'megauser' => 'megauser',
+      'staff admin' => 'staff admin',
     ),
     'module' => 'entityform',
   );

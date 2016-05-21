@@ -10,7 +10,7 @@
 function ghg_eventmap_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-event-body'
+  // Exported field_instance: 'node-event-body'.
   $field_instances['node-event-body'] = array(
     'bundle' => 'event',
     'default_value' => array(
@@ -71,7 +71,7 @@ function ghg_eventmap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_date_time'
+  // Exported field_instance: 'node-event-field_date_time'.
   $field_instances['node-event-field_date_time'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -92,6 +92,7 @@ function ghg_eventmap_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 3,
@@ -105,6 +106,7 @@ function ghg_eventmap_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -118,6 +120,7 @@ function ghg_eventmap_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 2,
@@ -151,21 +154,10 @@ function ghg_eventmap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_location'
+  // Exported field_instance: 'node-event-field_event_location'.
   $field_instances['node-event-field_event_location'] = array(
     'bundle' => 'event',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'node|event|field_event_location|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'US',
-        'name_line' => '',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -218,6 +210,7 @@ function ghg_eventmap_field_default_field_instances() {
       'module' => 'addressfield',
       'settings' => array(
         'available_countries' => array(),
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'name-oneline' => 'name-oneline',
@@ -231,7 +224,7 @@ function ghg_eventmap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_format'
+  // Exported field_instance: 'node-event-field_format'.
   $field_instances['node-event-field_format'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -282,7 +275,7 @@ function ghg_eventmap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_geolocation'
+  // Exported field_instance: 'node-event-field_geolocation'.
   $field_instances['node-event-field_geolocation'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -396,7 +389,7 @@ function ghg_eventmap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_official_link'
+  // Exported field_instance: 'node-event-field_official_link'.
   $field_instances['node-event-field_official_link'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -466,7 +459,7 @@ function ghg_eventmap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_time'
+  // Exported field_instance: 'node-event-field_time'.
   $field_instances['node-event-field_time'] = array(
     'bundle' => 'event',
     'default_value' => array(
@@ -524,7 +517,7 @@ function ghg_eventmap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_type'
+  // Exported field_instance: 'node-event-field_type'.
   $field_instances['node-event-field_type'] = array(
     'bundle' => 'event',
     'default_value' => NULL,

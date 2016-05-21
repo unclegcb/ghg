@@ -115,18 +115,9 @@ function ghg_applications_field_default_field_instances() {
   // Exported field_instance: 'entityform-2016_application-field_essay_4'.
   $field_instances['entityform-2016_application-field_essay_4'] = array(
     'bundle' => '2016_application',
-    'default_value' => array(
-      0 => array(
-        'value' => 'a)  What can be done to increase diversity in the Magic community?  What factors, if any, do you see as inhibiting or encouraging diversity?
-b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Please explain the factors that would influence your decision.',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Pick 1:
-<ul>
-<li>a)  What can be done to increase diversity in the Magic community?  What factors, if any, do you see as inhibiting or encouraging diversity?</li>
-<li>b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Please explain the factors that would influence your decision.</li>
-</ul>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -138,7 +129,7 @@ b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Pleas
     ),
     'entity_type' => 'entityform',
     'field_name' => 'field_essay_4',
-    'label' => 'Essay 4: Pick One',
+    'label' => 'Essay 4: What aspect(s) of the Magic community would you like to see changed and why?',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -159,7 +150,9 @@ b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Pleas
   $field_instances['entityform-2016_application-field_fafsa'] = array(
     'bundle' => '2016_application',
     'deleted' => 0,
-    'description' => 'Upload a PDF copy of your Student Aid Report from the <a href="http://www.fafsa.ed.gov/">Free Application for Federal Student Aid (FAFSA)</a>.',
+    'description' => 'Upload a PDF copy of your Student Aid Report from the <a href="http://www.fafsa.ed.gov/">Free Application for Federal Student Aid (FAFSA)</a>.
+
+The GHG scholarships are need based and we use the FAFSA report to assess this need.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -231,7 +224,7 @@ b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Pleas
     'bundle' => '2016_application',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Significant Magic accomplishments are not a pre-requisite for winning an award.  It is a factor in our evaluation of each applicant, but many casual players have won GHG awards.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -891,6 +884,7 @@ b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Pleas
   t('Essay 2: What is your favorite magic card or mechanic and why?');
   t('Essay 3: What is your least favorite magic card or mechanic and why?');
   t('Essay 4: Pick One');
+  t('Essay 4: What aspect(s) of the Magic community would you like to see changed and why?');
   t('Finalist Rating');
   t('Full Name');
   t('High School Transcript');
@@ -902,9 +896,13 @@ b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Pleas
 </ul>');
   t('Rating');
   t('SAT/ACT Score');
+  t('Significant Magic accomplishments are not a pre-requisite for winning an award.  It is a factor in our evaluation of each applicant, but many casual players have won GHG awards.');
   t('Student Aid Report');
   t('Submission Status');
   t('Upload a PDF copy of your Student Aid Report from the <a href="http://www.fafsa.ed.gov/">Free Application for Federal Student Aid (FAFSA)</a>.');
+  t('Upload a PDF copy of your Student Aid Report from the <a href="http://www.fafsa.ed.gov/">Free Application for Federal Student Aid (FAFSA)</a>.
+
+The GHG scholarships are need based and we use the FAFSA report to assess this need.');
   t('Upload a transcript in PDF format. (You may upload multiple transcripts: additional upload fields will appear after each addition.)');
   t('What are some of your Magic Achievements?');
   t('Your application will not be submitted until you change this field to "submitted" and Save.');
