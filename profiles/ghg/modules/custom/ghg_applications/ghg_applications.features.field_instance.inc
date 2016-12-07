@@ -129,7 +129,7 @@ function ghg_applications_field_default_field_instances() {
     ),
     'entity_type' => 'entityform',
     'field_name' => 'field_essay_4',
-    'label' => 'Essay 4: What aspect(s) of the Magic community would you like to see changed and why?',
+    'label' => 'Essay 4: What lessons can we learn from Magic to help us solve real world problems?',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -971,7 +971,7 @@ b)  It is your turn 3.  Do you attack your 2/2 into your opponent\'s 3/3?  Pleas
   t('Essay 2: What is your favorite magic card or mechanic and why?');
   t('Essay 3: What is your least favorite magic card or mechanic and why?');
   t('Essay 4: Pick One');
-  t('Essay 4: What aspect(s) of the Magic community would you like to see changed and why?');
+  t('Essay 4: What lessons can we learn from Magic to help us solve real world problems?');
   t('Finalist Rating');
   t('Full Name');
   t('High School Transcript');

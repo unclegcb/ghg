@@ -45,7 +45,7 @@ function ghg_applications_default_entityform_type() {
       "submission_show_submitted" : 1,
       "submissions_view" : "default",
       "user_submissions_view" : "default",
-      "form_status" : "ENTITYFORM_CLOSED",
+      "form_status" : "ENTITYFORM_OPEN",
       "roles" : { "2" : "2", "4" : "4", "6" : "6", "3" : "3", "5" : "5", "1" : 0 },
       "resubmit_action" : "old",
       "redirect_path" : "",
