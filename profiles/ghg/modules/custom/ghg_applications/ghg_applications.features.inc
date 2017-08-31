@@ -27,7 +27,7 @@ function ghg_applications_default_entityform_type() {
   $items = array();
   $items['2016_application'] = entity_import('entityform_type', '{
     "type" : "2016_application",
-    "label" : "2016 GHG Scholarship Application",
+    "label" : "2017 GHG Scholarship Application",
     "data" : {
       "draftable" : 1,
       "draft_redirect_path" : "",
@@ -45,7 +45,7 @@ function ghg_applications_default_entityform_type() {
       "submission_show_submitted" : 1,
       "submissions_view" : "default",
       "user_submissions_view" : "default",
-      "form_status" : "ENTITYFORM_OPEN",
+      "form_status" : "ENTITYFORM_CLOSED",
       "roles" : { "2" : "2", "4" : "4", "6" : "6", "3" : "3", "5" : "5", "1" : 0 },
       "resubmit_action" : "old",
       "redirect_path" : "",
