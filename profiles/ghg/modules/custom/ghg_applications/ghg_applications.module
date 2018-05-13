@@ -1,7 +1,15 @@
 <?php
+
 /**
  * @file
  * Code for the GHG Applications feature.
  */
 
 include_once 'ghg_applications.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ghg_applications_form_2016_application_entityform_edit_form_alter(&$form, &$form_state, $form_id) {
+  $form['field_submitted_on_time']['#access'] = FALSE;
+}
